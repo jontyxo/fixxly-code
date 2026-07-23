@@ -294,7 +294,7 @@ export const sections = [
       {
         ul: [
           'Email: appsupport@fixxly.in',
-          'Grievance Officer: Sarthak Patnayak',
+          'Grievance Officer: Sarthak Patnaik',
           'Designation: Founding Member',
           'Address: 4th floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka - 560041',
         ],

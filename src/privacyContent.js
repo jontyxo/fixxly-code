@@ -302,7 +302,7 @@ export const sections = [
       { p: 'In compliance with applicable law:' },
       {
         ul: [
-          'Name: Sarthak Patnayak',
+          'Name: Sarthak Patnaik',
           'Designation: Founding Member',
           'Email: appsupport@fixxly.in',
           'Address: 4th floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka - 560041',

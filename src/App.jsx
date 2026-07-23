@@ -1,121 +1,80 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { intro, sections, contact } from './privacyContent'
 import './App.css'
 
+const LINK_RE = /(https?:\/\/[^\s]+|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g
+
+// Turn bare emails and URLs inside policy text into clickable links.
+function linkify(text) {
+  return text.split(LINK_RE).map((part, i) => {
+    if (/^https?:\/\//.test(part)) {
+      return (
+        <a key={i} href={part} target="_blank" rel="noreferrer">
+          {part}
+        </a>
+      )
+    }
+    if (part.includes('@') && LINK_RE.test(part)) {
+      return (
+        <a key={i} href={`mailto:${part}`}>
+          {part}
+        </a>
+      )
+    }
+    return part
+  })
+}
+
+function Block({ block }) {
+  if (block.sub) return <h3>{block.sub}</h3>
+  if (block.p) return <p>{linkify(block.p)}</p>
+  if (block.ul)
+    return (
+      <ul>
+        {block.ul.map((item, i) => (
+          <li key={i}>{linkify(item)}</li>
+        ))}
+      </ul>
+    )
+  return null
+}
+
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+    <main className="policy">
+      <header className="policy-header">
+        <h1>Privacy Policy</h1>
+      </header>
+
+      {intro.map((block, i) => (
+        <Block key={i} block={block} />
+      ))}
+
+      {sections.map((section) => (
+        <section key={section.h}>
+          <h2>{section.h}</h2>
+          {section.blocks.map((block, i) => (
+            <Block key={i} block={block} />
+          ))}
+        </section>
+      ))}
+
+      <hr />
+
+      <section className="contact">
+        <h2>Contact</h2>
+        <p>{contact.company}</p>
+        <p>{contact.address}</p>
+        <p>
+          Email: <a href={`mailto:${contact.email}`}>{contact.email}</a>
+        </p>
+        <p>
+          Website:{' '}
+          <a href={contact.website} target="_blank" rel="noreferrer">
+            {contact.website}
+          </a>
+        </p>
       </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+    </main>
   )
 }
 

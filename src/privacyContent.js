@@ -304,8 +304,8 @@ export const sections = [
       { p: 'In compliance with applicable law:' },
       {
         ul: [
-          'Name: [PLACEHOLDER — Grievance Officer Name]',
-          'Designation: [PLACEHOLDER — e.g. General Manager / Compliance Officer]',
+          'Name: Sarthak Patnayak',
+          'Designation: Founding Member',
           'Email: appsupport@fixxly.in',
           'Address: 4th floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka - 560041',
         ],

@@ -5,48 +5,30 @@ import * as terms from './termsContent'
 import './App.css'
 
 const PAGES = {
-  privacy: { label: 'Privacy Policy', title: 'Privacy Policy', doc: privacy },
-  terms: { label: 'Terms & Conditions', title: 'Terms & Conditions', doc: terms },
+  '/terms': { title: 'Terms & Conditions', doc: terms },
+  '/': { title: 'Privacy Policy', doc: privacy },
 }
 
-const routeFromHash = () =>
-  window.location.hash.replace('#/', '') in PAGES
-    ? window.location.hash.replace('#/', '')
-    : 'privacy'
+const routeFromPath = () => (window.location.pathname === '/terms' ? '/terms' : '/')
 
 function App() {
-  const [route, setRoute] = useState(routeFromHash)
+  const [route, setRoute] = useState(routeFromPath)
 
   useEffect(() => {
-    const onHashChange = () => setRoute(routeFromHash())
-    window.addEventListener('hashchange', onHashChange)
-    return () => window.removeEventListener('hashchange', onHashChange)
+    const onPopState = () => setRoute(routeFromPath())
+    window.addEventListener('popstate', onPopState)
+    return () => window.removeEventListener('popstate', onPopState)
   }, [])
 
   const page = PAGES[route]
 
   return (
-    <>
-      <nav className="policy-nav">
-        <div className="policy-nav-inner">
-          {Object.entries(PAGES).map(([key, { label }]) => (
-            <a
-              key={key}
-              href={`#/${key}`}
-              className={key === route ? 'active' : undefined}
-            >
-              {label}
-            </a>
-          ))}
-        </div>
-      </nav>
-      <LegalDocument
-        title={page.title}
-        intro={page.doc.intro}
-        sections={page.doc.sections}
-        contact={page.doc.contact}
-      />
-    </>
+    <LegalDocument
+      title={page.title}
+      intro={page.doc.intro}
+      sections={page.doc.sections}
+      contact={page.doc.contact}
+    />
   )
 }
 

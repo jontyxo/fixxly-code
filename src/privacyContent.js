@@ -307,7 +307,7 @@ export const sections = [
           'Name: [PLACEHOLDER — Grievance Officer Name]',
           'Designation: [PLACEHOLDER — e.g. General Manager / Compliance Officer]',
           'Email: appsupport@fixxly.in',
-          'Address: [PLACEHOLDER — Fixxly registered office address]',
+          'Address: 4th floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka - 560041',
         ],
       },
       { p: 'Complaints will be acknowledged within 36 hours and resolved within one month.' },
@@ -328,7 +328,7 @@ export const sections = [
 
 export const contact = {
   company: 'Fixxly Private Limited',
-  address: '[PLACEHOLDER — Registered address, CIN]',
+  address: '4th floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka - 560041',
   email: 'appsupport@fixxly.in',
   website: 'https://www.fixxly.in',
 }

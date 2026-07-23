@@ -1,5 +1,3 @@
-export const lastUpdated = '20 July 2026'
-
 // Block types: h (section heading), sub (sub-heading), p (paragraph),
 // ul (bullet list), ol (numbered list), contact (name + email link).
 export const intro = [

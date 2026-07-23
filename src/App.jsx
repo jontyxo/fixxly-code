@@ -1,80 +1,52 @@
-import { intro, sections, contact } from './privacyContent'
+import { useEffect, useState } from 'react'
+import LegalDocument from './LegalDocument'
+import * as privacy from './privacyContent'
+import * as terms from './termsContent'
 import './App.css'
 
-const LINK_RE = /(https?:\/\/[^\s]+|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g
-
-// Turn bare emails and URLs inside policy text into clickable links.
-function linkify(text) {
-  return text.split(LINK_RE).map((part, i) => {
-    if (/^https?:\/\//.test(part)) {
-      return (
-        <a key={i} href={part} target="_blank" rel="noreferrer">
-          {part}
-        </a>
-      )
-    }
-    if (part.includes('@') && LINK_RE.test(part)) {
-      return (
-        <a key={i} href={`mailto:${part}`}>
-          {part}
-        </a>
-      )
-    }
-    return part
-  })
+const PAGES = {
+  privacy: { label: 'Privacy Policy', title: 'Privacy Policy', doc: privacy },
+  terms: { label: 'Terms & Conditions', title: 'Terms & Conditions', doc: terms },
 }
 
-function Block({ block }) {
-  if (block.sub) return <h3>{block.sub}</h3>
-  if (block.p) return <p>{linkify(block.p)}</p>
-  if (block.ul)
-    return (
-      <ul>
-        {block.ul.map((item, i) => (
-          <li key={i}>{linkify(item)}</li>
-        ))}
-      </ul>
-    )
-  return null
-}
+const routeFromHash = () =>
+  window.location.hash.replace('#/', '') in PAGES
+    ? window.location.hash.replace('#/', '')
+    : 'privacy'
 
 function App() {
+  const [route, setRoute] = useState(routeFromHash)
+
+  useEffect(() => {
+    const onHashChange = () => setRoute(routeFromHash())
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
+
+  const page = PAGES[route]
+
   return (
-    <main className="policy">
-      <header className="policy-header">
-        <h1>Privacy Policy</h1>
-      </header>
-
-      {intro.map((block, i) => (
-        <Block key={i} block={block} />
-      ))}
-
-      {sections.map((section) => (
-        <section key={section.h}>
-          <h2>{section.h}</h2>
-          {section.blocks.map((block, i) => (
-            <Block key={i} block={block} />
+    <>
+      <nav className="policy-nav">
+        <div className="policy-nav-inner">
+          {Object.entries(PAGES).map(([key, { label }]) => (
+            <a
+              key={key}
+              href={`#/${key}`}
+              className={key === route ? 'active' : undefined}
+            >
+              {label}
+            </a>
           ))}
-        </section>
-      ))}
-
-      <hr />
-
-      <section className="contact">
-        <h2>Contact</h2>
-        <p>{contact.company}</p>
-        <p>{contact.address}</p>
-        <p>
-          Email: <a href={`mailto:${contact.email}`}>{contact.email}</a>
-        </p>
-        <p>
-          Website:{' '}
-          <a href={contact.website} target="_blank" rel="noreferrer">
-            {contact.website}
-          </a>
-        </p>
-      </section>
-    </main>
+        </div>
+      </nav>
+      <LegalDocument
+        title={page.title}
+        intro={page.doc.intro}
+        sections={page.doc.sections}
+        contact={page.doc.contact}
+      />
+    </>
   )
 }
 

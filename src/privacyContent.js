@@ -1,6 +1,8 @@
 // Block types: h (section heading), sub (sub-heading), p (paragraph),
 // ul (bullet list), ol (numbered list), contact (name + email link).
-export const intro = []
+export const intro = [
+  { p: 'Last Updated: 1 August 2026' },
+]
 
 export const sections = [
   {

@@ -1,324 +1,160 @@
 // Block types: h (section heading), sub (sub-heading), p (paragraph),
 // ul (bullet list), ol (numbered list), contact (name + email link).
-export const intro = [
-  {
-    p: 'FIXXLY PRIVATE LIMITED ("Fixxly", "Company", "we", "our", or "us") is committed to protecting your personal data in accordance with:',
-  },
-  {
-    ul: [
-      'The Information Technology Act, 2000',
-      'The Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011',
-      'The Digital Personal Data Protection Act, 2023 ("DPDP Act")',
-    ],
-  },
-  {
-    p: 'By accessing the Fixxly mobile application, our website, our WhatsApp channel, or by placing an order through any of these interfaces, you agree to this Privacy Policy.',
-  },
-  {
-    p: 'Fixxly is a B2B quick-commerce platform built exclusively for trade professionals in India — plumbers, electricians, carpenters, painters, tilers, and general contractors — delivering trade essentials to job sites in 30 minutes.',
-  },
-]
+export const intro = []
 
 export const sections = [
   {
-    h: '1. Role of the Company',
+    h: '1. Introduction and Consent',
     blocks: [
       {
-        p: 'Under the DPDP Act, Fixxly acts as a Data Fiduciary, meaning we determine the purpose and means of processing your personal data.',
+        p: 'Fixxly Private Limited ("Company", "Fixxly", "we", "us", "our") is committed to protecting the privacy of individuals who use our mobile application (the "App"). "You" or "your" refers to users of the App. This Privacy Policy ("Policy") explains what personal information we collect through the App, why we collect it, how we use and protect it, and the rights available to you as a "Data Principal" under the Digital Personal Data Protection Act, 2023 ("DPDPA").',
+      },
+      {
+        p: 'This Policy is an electronic record under the Information Technology Act, 2000 ("IT Act") and does not require any physical or digital signature. It should be read together with our Terms of Use. Capitalised terms not defined here have the meaning given in the Terms of Use.',
+      },
+      {
+        p: 'This Policy describes the App in its current form, which allows you to sign in, browse products, and save optional profile and site details.',
+      },
+      {
+        p: 'By using the App or providing your information to us, you consent to the collection, use, storage, and disclosure of your personal information as described in this Policy. Where we rely on your consent for a specific processing activity (for example, sending promotional communications), we will seek that consent separately and specifically, in line with DPDPA requirements for clear, informed, and purpose-specific consent.',
       },
     ],
   },
   {
-    h: '2. Personal Data We Collect',
+    h: '2. Information We Collect',
     blocks: [
       {
-        p: 'We collect only data necessary for lawful purposes tied to running the Fixxly service.',
-      },
-      { sub: 'A. Identity & Contact Data' },
-      { ul: ['Full name', 'Mobile number (registered)', 'Trade / profession selected at onboarding'] },
-      { sub: 'B. Business & Site Data' },
-      {
-        ul: [
-          'Project or site details (site name, address, pincode, delivery instructions)',
-          'Site contact details (contact name, additional phone numbers per site)',
-          'GSTIN and billing address (if provided by the user for GST-compliant invoicing)',
-        ],
-      },
-      { sub: 'C. Transaction Data' },
-      {
-        ul: [
-          'Order history',
-          'Payment transaction reference details (payments are processed through third-party payment gateways; we do not store card or UPI credentials)',
-          'Refund information',
-          'Fixxly Coins / wallet balance and redemption history',
-        ],
-      },
-      { sub: 'D. Account Data' },
-      { ul: ['User account identifier', 'Authentication tokens for the app and WhatsApp channel'] },
-      { sub: 'E. Location Data' },
-      {
-        ul: [
-          'Approximate and precise device location (with user permission), used for pinpointing job-site delivery and mapping the user to the nearest fulfilment hub',
-        ],
-      },
-      { sub: 'F. Technical Data' },
-      {
-        ul: [
-          'IP address',
-          'Device information (model, OS version, app version)',
-          'Browser type (for web access)',
-          'Cookies and usage analytics',
-          'Crash logs and diagnostic data',
-        ],
-      },
-      { sub: 'G. Voice & Media Data (WhatsApp channel)' },
-      {
-        ul: [
-          'Voice notes shared by the user for quick ordering are transcribed for the purpose of order placement',
-          'Images or PDFs shared by the user (e.g. site photos, warranty documents) for support and order handling',
-        ],
-      },
-      {
-        p: 'Fixxly is intended for use by trade professionals aged 18 years and above. We do not intentionally collect data from individuals below 18 years of age.',
-      },
-    ],
-  },
-  {
-    h: '3. Purpose of Processing (Lawful Use)',
-    blocks: [
-      { p: 'We process personal data only for:' },
-      {
-        ul: [
-          'Order placement, fulfilment, and delivery to your job site',
-          'Account and project management',
-          'Customer support and grievance resolution',
-          'Processing payments and refunds',
-          'GST-compliant invoicing and tax compliance',
-          'Wallet and cashback management',
-          'Delivery routing and hub allocation',
-          'Communicating order status updates, delivery ETAs, and shipment milestones (via SMS, WhatsApp, in-app notifications, email)',
-          'Marketing communications (with your consent)',
-          'Fraud detection and prevention',
-          'Legal and regulatory compliance',
-          'Improving user experience through analytics',
-        ],
-      },
-      {
-        p: 'Personal data will not be processed for purposes other than those stated above unless explicit consent is obtained from the user or where such processing is required under applicable law.',
-      },
-    ],
-  },
-  {
-    h: '4. Consent (Core DPDP Requirement)',
-    blocks: [
-      { p: 'Consent under the DPDP Act must be:' },
-      { ul: ['Free', 'Specific', 'Informed', 'Unconditional', 'Unambiguous', 'Given through clear affirmative action'] },
-      {
-        p: 'By clicking "I Agree", creating an account, placing an order, or initiating a conversation with Fixxly on WhatsApp, you provide consent for processing your data for the purposes specified above.',
-      },
-      { p: 'You have the right to:' },
-      {
-        ul: [
-          'Withdraw consent at any time',
-          'Request correction of your data',
-          'Request erasure of your data',
-          'Access information about how your data is processed',
-        ],
-      },
-      { p: 'To exercise these rights, contact: appsupport@fixxly.in' },
-      { p: 'Withdrawal of consent will not affect lawful processing done prior to withdrawal.' },
-    ],
-  },
-  {
-    h: '5. Data Principal Rights (DPDP Compliance)',
-    blocks: [
-      { p: 'Under the DPDP Act, you have the following rights:' },
-      { sub: '1. Right to Access Information' },
-      { p: 'You are entitled to:' },
-      {
-        ul: [
-          'A summary of the data we hold about you',
-          'A summary of the processing activities we carry out on your data',
-          'The identities of any data processors with whom your data is shared',
-        ],
-      },
-      { sub: '2. Right to Correction and Erasure' },
-      {
-        p: 'You may request correction of inaccurate or incomplete personal data, or request deletion of your personal data.',
-      },
-      { p: 'Process to exercise this right:' },
-      {
-        ul: [
-          'Submit a Request: Email appsupport@fixxly.in with your name, registered mobile number, and a clear description of the data you want corrected or erased.',
-          'Verification: We may verify your identity before processing the request.',
-          'Processing: On successful verification, we will review and take appropriate action.',
-          'Timeline: We will respond within 15 working days of receiving the request.',
-          'Exceptions: Certain data may be retained where required under applicable law (tax records, audit trails, dispute-related records) or for legitimate business purposes.',
-        ],
-      },
-      {
-        p: 'In-app deletion: You can also initiate account deletion directly from the app via Account → Settings → Delete Account.',
-      },
-      { sub: '3. Right to Grievance Redressal' },
-      {
-        p: 'You have the right to raise grievances regarding the collection, use, or processing of your personal data.',
-      },
-      { p: 'Grievance Redressal Process:' },
-      {
-        ul: [
-          'Filing: Submit your grievance via appsupport@fixxly.in or the in-app support form.',
-          'Details: Include your name, registered contact, and a brief description of the issue.',
-          'Acknowledgement: We will acknowledge within 3–5 working days.',
-          'Resolution: We aim to resolve grievances within 15 working days from receipt.',
-        ],
-      },
-      { sub: '4. Right to Nominate' },
-      {
-        p: 'You may nominate another individual to exercise your rights in the event of your death or incapacity. Requests are addressed within prescribed timelines.',
-      },
-    ],
-  },
-  {
-    h: "6. Children's Data",
-    blocks: [
-      {
-        p: 'Fixxly is a B2B platform intended for trade professionals aged 18 years and above. We do not knowingly process personal data of children (below 18 years). If discovered, such data will be deleted promptly. No behavioural tracking or targeted advertising is conducted for minors.',
-      },
-    ],
-  },
-  {
-    h: '7. Data Security Safeguards',
-    blocks: [
-      { p: 'We implement reasonable technical and organisational safeguards, including:' },
-      {
-        ul: [
-          'SSL / TLS encryption for all data in transit',
-          'Secure integration with third-party payment gateways (Fixxly does not store card or UPI credentials)',
-          'Access control and role-based permissions on internal systems',
-          'Vendor confidentiality and data-processing agreements',
-          'Periodic security audits and monitoring',
-        ],
-      },
-      {
-        p: 'In the event of a data breach, we will notify the Data Protection Board of India and affected users as required under the DPDP Act.',
-      },
-    ],
-  },
-  {
-    h: '8. Data Retention',
-    blocks: [
-      { p: 'We retain personal data only as long as necessary for:' },
-      {
-        ul: [
-          'Fulfilling active orders and delivering services',
-          'Legal and regulatory compliance (GST, tax, audit, accounting — as required under Indian law)',
-          'Dispute resolution and grievance handling',
-        ],
-      },
-      {
-        p: 'When data is no longer required, it is securely deleted or anonymised. Transactional records required by law (e.g. GST invoices, financial records) are retained for the periods prescribed by applicable statutes.',
-      },
-    ],
-  },
-  {
-    h: '9. Disclosure of Data to Third Parties',
-    blocks: [
-      {
-        p: 'To provide our services effectively, we may share limited personal data with trusted third-party service providers, including:',
+        p: 'We collect only as much personal information as is reasonably necessary for the purposes described in this Policy ("data minimisation"):',
       },
       {
         ul: [
-          'Payment gateway providers — for processing online payments and refunds',
-          'Logistics and delivery partners — for order fulfilment, dispatch, and last-mile delivery to your job site',
-          'Cloud hosting and infrastructure providers — for hosting the Fixxly app and backend systems',
-          'ERP and commerce platform providers — for order management, catalogue, and inventory operations',
-          'Conversational AI / WhatsApp Business Solution Providers — for enabling ordering, tracking, and support on WhatsApp',
-          'Search and recommendation service providers — for catalogue discovery',
-          'Communication service providers — for SMS, WhatsApp, email, and push notifications',
-          'Analytics providers — for measuring app performance and user experience',
-          'Auditors, legal advisors, and regulatory authorities — where required by law',
+          'Account information. Your mobile number, which we collect when you sign in using an OTP. Where you choose to provide them, we also collect your name, email address, profile photo, and trade or business name, and your GST registration number where you use GST-related features.',
+          'Device and technical information. When the App communicates with our servers, we automatically receive limited technical information such as your device model, operating system version, App version, and IP address, which we use to operate and secure the App.',
         ],
       },
       {
-        p: 'Sharing takes place only with your consent, or where it is necessary for the performance of a contract or compliance with legal obligations.',
+        p: "What we do not collect in this version. The App does not access your device's precise GPS location, camera, or microphone, and it does not request or process any payment information (such as card, UPI, or bank details), because the App does not currently support ordering or payments. The App does not use third-party advertising or analytics tracking.",
       },
       {
-        p: 'All third parties with whom personal data is shared are contractually obligated to maintain strict confidentiality, implement appropriate security measures, and process personal data only for the specified purpose in accordance with applicable data protection laws.',
+        p: 'If you choose not to provide optional information, you can still browse the App, though some optional features may not be available.',
       },
     ],
   },
   {
-    h: '10. Cross-Border Data Transfers',
+    h: '3. How We Use Your Information',
     blocks: [
+      { p: 'We use the information we collect for the following purposes:' },
       {
-        p: 'Certain personal data may be processed outside India by our cloud service providers or third-party service partners. Such transfers will comply with the restrictions notified by the Government of India under the DPDP Act.',
+        ul: [
+          'Account and sign-in. Verifying your mobile number via OTP and maintaining your signed-in session.',
+          'Providing the App. Showing you relevant categories and products, and saving your profile.',
+          'Support. Responding to your queries and requests.',
+          'Security and fraud prevention. Detecting and preventing unauthorised access, misuse, and policy violations.',
+          'Legal compliance. Responding to lawful requests from courts, regulators, or law enforcement, and meeting our legal obligations.',
+          'Marketing (opt-in only). Sending you offers and updates, only where you have consented, and which you can opt out of at any time.',
+        ],
+      },
+      {
+        p: "We will not use your personal information for a purpose materially different from those stated above without seeking your fresh consent, in line with the DPDPA's purpose-limitation principle.",
       },
     ],
   },
   {
-    h: '11. Non-Personally Identifiable Information',
+    h: '4. Disclosure and Sharing',
     blocks: [
+      { p: 'We share your information only to the extent necessary, with:' },
       {
-        p: 'We may also collect aggregated information about the use of our service — such as the extent to which certain features are used, popular categories, average order values, and delivery patterns. Aggregated information is anonymous and statistical in nature, reflecting the scope of our user base and customer patterns. We use this information to better understand how Fixxly is used and to improve the user experience. This information is not used in a way that will personally identify you.',
+        ul: [
+          'Cloud hosting and infrastructure providers that operate our servers and store data on our behalf, under confidentiality obligations;',
+          'Professional advisors such as auditors and legal counsel, as needed for legitimate business purposes;',
+          'Law enforcement or government authorities, where required by law, a valid legal process, or to protect the rights, safety, or property of Fixxly, our users, or the public;',
+          'A successor entity, in the event of a merger, acquisition, or restructuring, subject to that entity honouring this Policy.',
+        ],
+      },
+      {
+        p: 'What we do not do. In this version of the App, we do not share your personal information with sellers, logistics or delivery partners, payment gateways, or advertising or analytics networks. We do not sell your personal information to any third party.',
       },
     ],
   },
   {
-    h: '12. Cookies & Similar Technologies',
+    h: '5. Data Retention and Deletion',
     blocks: [
       {
-        p: 'We may use cookies, device identifiers, and similar technologies (on our website and app) to recognise you across sessions, understand traffic patterns, and personalise your experience. Cookies may collect information such as the domain and host from which you access the internet, your IP address, the date and time of access, and the source URL from which you were referred. We use this information to better understand our users and customise the service to your preferences.',
+        p: '5.1 We retain your personal information only for as long as reasonably necessary to fulfil the purposes described in this Policy, or as required to comply with applicable law, whichever is longer.',
       },
-      { p: 'You can manage cookie preferences through your device or browser settings.' },
-    ],
-  },
-  {
-    h: '13. Deletion of E-commerce Transaction Data',
-    blocks: [
       {
-        p: 'For users who have placed orders through Fixxly, certain transactional data (order history, invoices, GST records) may be retained for accounting, audit, and legal compliance purposes as required under Indian law. Any unnecessary personal information will be securely deleted upon request.',
+        p: '5.2 Right to erasure. In line with the DPDPA, you may request deletion of your personal information at any time by writing to our Grievance Officer (Section 9) or through the "Delete my account" option in the App, where available. We will act on your request unless we are required to retain certain data (a) to comply with a legal or regulatory obligation, or (b) for the establishment, exercise, or defence of a legal claim.',
+      },
+      {
+        p: '5.3 Upon account deletion, we will remove or anonymise your personal information within the timelines prescribed under applicable law, except for the retained categories described above.',
       },
     ],
   },
   {
-    h: '14. Confirmation of Data Deletion',
+    h: '6. Information Security',
     blocks: [
       {
-        p: 'Upon successful deletion of user data, Fixxly will provide confirmation via email or another agreed communication method (WhatsApp, in-app notification).',
+        p: 'We implement reasonable managerial, technical, operational, and physical security safeguards appropriate to the sensitivity of the information we hold, including encryption in transit, access controls, and periodic security reviews, in line with the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011.',
+      },
+      {
+        p: 'No method of transmission over the internet or electronic storage is completely secure. While we strive to protect your personal information, we cannot guarantee its absolute security. In the event of a data breach that affects you, we will notify you and the relevant authorities as required under applicable law.',
       },
     ],
   },
   {
-    h: '15. Data Backup and Deletion',
+    h: '7. Your Rights and Withdrawal of Consent',
     blocks: [
       {
-        p: 'We regularly back up our systems for security and disaster recovery. Deleted user data is removed from active systems, but may be retained in backup archives for a limited period. Backups are securely stored and will be overwritten or deleted in due course as per our retention policy.',
+        p: '7.1 Your rights. Subject to applicable law, you may request access to, correction of, or erasure of your personal information, and you may withdraw any consent you have given. Withdrawal is configured to be as easy as giving consent.',
+      },
+      {
+        p: '7.2 Direct controls. You can opt out of promotional messages via the option provided in the communication or in the App, or by writing to us.',
+      },
+      {
+        p: '7.3 Consent Managers under DPDPA. In accordance with the DPDPA, you have the right to give, manage, review, or withdraw your consent through an independently registered Consent Manager as such platforms become operational under the Data Protection Board of India. Until then, you can manage your permissions in the App or by contacting our Grievance Officer.',
+      },
+      {
+        p: '7.4 Right to nominate. You have the right to nominate, in the prescribed manner, another individual to exercise your rights as a Data Principal on your behalf in the event of your death or incapacity.',
+      },
+      {
+        p: 'Withdrawing consent for certain information may limit or disable some features. Withdrawal will not affect the lawfulness of processing carried out before such withdrawal.',
       },
     ],
   },
   {
-    h: '16. Grievance Officer',
+    h: '8. Minors',
     blocks: [
-      { p: 'In compliance with applicable law:' },
+      {
+        p: 'The App is intended solely for use by individuals who are 18 years of age or older. We do not knowingly collect personal information from children. If we become aware that we have inadvertently collected personal information from a minor, we will delete such information and, where applicable, deactivate the associated account promptly. If you believe a minor has provided us with personal information, please contact our Grievance Officer immediately.',
+      },
+    ],
+  },
+  {
+    h: '9. Grievance Officer',
+    blocks: [
+      {
+        p: 'In accordance with the IT Act, 2000, the Intermediary Guidelines, 2021, and the DPDPA, 2023, you may direct any question, complaint, or request concerning your personal information (including requests to access, correct, or erase your data, or to withdraw consent) to our Grievance Officer:',
+      },
       {
         ul: [
           'Name: Sarthak Patnaik',
-          'Designation: Founding Member',
+          'Designation: Grievance Officer / Data Protection Contact',
+          'Address: 4th Floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka, 560041',
           'Email: appsupport@fixxly.in',
-          'Address: 4th floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka - 560041',
+          'Phone: +91-9740833777',
+          'Response Timeline: We acknowledge your complaint within 24 hours and endeavour to resolve it within 7 days from receipt, on Business Days.',
         ],
       },
-      { p: 'Complaints will be acknowledged within 36 hours and resolved within one month.' },
+      {
+        p: 'If you are not satisfied with our resolution, you may also have the right to file a complaint with the Data Protection Board of India, once fully operative under the DPDPA.',
+      },
     ],
   },
   {
-    h: '17. Changes to this Policy',
+    h: '10. Changes to This Policy',
     blocks: [
       {
-        p: 'Fixxly reserves the right to update or modify this Privacy Policy at any time. Users will be notified of material changes via the app, website, WhatsApp, email, or other communication channels. The "Last updated" date at the top of this policy indicates the most recent revision.',
-      },
-      {
-        p: 'For any inquiries or concerns regarding your data or this policy, please contact appsupport@fixxly.in.',
+        p: 'We may update this Policy from time to time to reflect changes in our practices or applicable law. The updated Policy will be posted with a revised "Last Updated" date, and your continued use of the App after such changes constitutes your acceptance of the updated Policy. For material changes affecting how we use your personal information, we will make reasonable efforts to notify you directly (for example, via in-app notice) before the change takes effect.',
       },
     ],
   },
@@ -326,7 +162,7 @@ export const sections = [
 
 export const contact = {
   company: 'Fixxly Private Limited',
-  address: '4th floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka - 560041',
+  address: '4th Floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka, 560041',
   email: 'appsupport@fixxly.in',
   website: 'https://www.fixxly.in',
 }

@@ -90,6 +90,9 @@ export const sections = [
       {
         p: '5.3 Upon account deletion, we will remove or anonymise your personal information within the timelines prescribed under applicable law, except for the retained categories described above.',
       },
+      {
+        p: '5.4 Account deletion requests. To request deletion of your Fixxly account, please contact us at care@fixxly.in. We will process your request in accordance with this Section 5.',
+      },
     ],
   },
   {

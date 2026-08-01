@@ -1,0 +1,105 @@
+- main [ref=e3]:
+  - heading "Fixxly Picker — Workforce Privacy Notice" [level=1] [ref=e5]
+  - paragraph [ref=e6]: "Fixxly Picker Android application | Package: com.fixxly.pickerapp"
+  - paragraph [ref=e7]: "Last Updated: 31 July, 2026"
+  - paragraph [ref=e8]: "Applies to: Fixxly Picker Android application, package com.fixxly.pickerapp"
+  - generic [ref=e9]:
+    - heading "1. Purpose & Scope" [level=2] [ref=e10]
+    - paragraph [ref=e11]: This Notice explains how Fixxly Private Limited ("Fixxly", "we", "us") handles personal data of authorised users of the Fixxly Picker application (the "App") — our warehouse and fulfilment personnel. It should be read with the Fixxly Picker Authorised User Terms and with any privacy notice provided to you under your employment or engagement.
+    - paragraph [ref=e12]: This is a workforce application, not a consumer one. This Notice does not apply to customers of Fixxly.
+    - paragraph [ref=e13]: Legal basis. Most processing described here is carried out for purposes connected with your employment or engagement, and to safeguard Fixxly from loss and liability. Under Section 7(i) of the Digital Personal Data Protection Act, 2023 ("DPDPA"), such processing is a legitimate use and does not depend on your consent. Where we do rely on consent — device notification permission and camera access, both requested at the operating-system level — you may decline or revoke it in your device settings, though doing so will prevent you from performing tasks that require those functions.
+  - generic [ref=e14]:
+    - heading "2. Personal Data We Process" [level=2] [ref=e15]
+    - paragraph [ref=e16]: (a) Identity & account data. The name and email address associated with your warehouse account, the account identifier itself, your mobile number where used for one-time password verification, and the role and warehouse, store, or site assigned to you.
+    - paragraph [ref=e17]: (b) Authentication data. Sign-in and sign-out events, one-time password verification events, session and refresh tokens, and failed sign-in attempts. Your password is handled by our authentication provider and is not visible to us in readable form.
+    - paragraph [ref=e18]: (c) Activity and productivity records. Every operational action you perform in the App, attributed to your account and timestamped. This includes picks recorded and delivery notes submitted; putaway confirmations; inventory movements between bin locations; stock counts and reconciliations, including discrepancies identified and how they were resolved; goods receipts and goods receipt notes created, including gate-entry time; barcodes scanned; and reason codes you select for damage, rejection, or resolution.
+    - paragraph [ref=e19]: Because each action is attributed to you and timestamped, these records inherently reveal information about your work — including task volumes, timings, and error or discrepancy rates. They may be used for performance management as described in Section 3.
+    - paragraph [ref=e20]: (d) Photographs you capture. Images of supplier invoices, of items rejected on inspection, and of products, captured through the App's camera or selected from your device's photo picker, and uploaded to our systems. These are intended to depict goods, packaging, and documents only. We do not use the App's camera for facial recognition, identity verification, biometric processing, or attendance monitoring of any kind.
+    - paragraph [ref=e21]: (e) Device and technical data. Device model, operating system version, app version and build, network connection state, IP address, a Firebase Cloud Messaging registration token used to deliver notifications to your device, crash reports and stack traces, and app usage and performance analytics collected through Firebase Analytics and Firebase Crashlytics.
+    - paragraph [ref=e22]: (f) Support communications. Records of issues you report and our responses.
+  - generic [ref=e23]:
+    - heading "3. Purposes of Processing" [level=2] [ref=e24]
+    - paragraph [ref=e25]: "The purposes for which we process your personal data, and the legal basis for each under the DPDPA, are:"
+    - list [ref=e26]:
+      - listitem [ref=e27]: Authenticating you and enforcing role- and warehouse-based access — Employment purposes; safeguarding against loss (s.7(i)).
+      - listitem [ref=e28]: Enabling you to perform assigned warehouse tasks — Employment purposes (s.7(i)).
+      - listitem [ref=e29]: Maintaining accurate inventory, stock, and goods-receipt records — Employment purposes; legal obligation (s.7(i), s.7(b)).
+      - listitem [ref=e30]: Audit trail and attribution of operational actions — Safeguarding against loss; legal obligation.
+      - listitem [ref=e31]: Investigating stock loss, shrinkage, discrepancy, or suspected falsification — Safeguarding against loss (s.7(i)).
+      - listitem [ref=e32]: Quality management and supplier disputes (including invoice and rejection photographs) — Employment purposes; legitimate business need.
+      - listitem [ref=e33]: Performance management, workload allocation, and shift planning — Employment purposes (s.7(i)).
+      - listitem [ref=e34]: Statutory, tax, and audit compliance — Legal obligation (s.7(b)).
+      - listitem [ref=e35]: Delivering operational notifications, announcements, and task alerts — Employment purposes; device permission consent.
+      - listitem [ref=e36]: Diagnosing crashes and improving app reliability — Legitimate business need.
+      - listitem [ref=e37]: Information security and prevention of unauthorised access — Safeguarding against loss.
+    - paragraph [ref=e38]: We do not use your personal data for advertising, marketing, or profiling unrelated to your role. We do not sell it.
+  - generic [ref=e39]:
+    - heading "4. What We Do Not Collect" [level=2] [ref=e40]
+    - paragraph [ref=e41]: "We want to be explicit, because a warehouse app can reasonably raise these concerns:"
+    - list [ref=e42]:
+      - listitem [ref=e43]: We do not collect your geographic location. The App requests no location permission and cannot access your device's GPS, either while in use or in the background. Where the App refers to a "location", it means a warehouse bin, shelf, or storage position — never your physical whereabouts.
+      - listitem [ref=e44]: We do not access your personal photos or files. Where you attach an image, you select it through your device's system photo picker, which discloses only the specific image you choose.
+      - listitem [ref=e45]: We do not access your contacts, SMS messages, call logs, calendar, or microphone.
+      - listitem [ref=e46]: We do not collect biometric data, and we do not use the camera for facial recognition or attendance.
+      - listitem [ref=e47]: We do not monitor your use of other applications on your device, or your activity outside the App.
+      - listitem [ref=e48]: We do not process payment or financial account data. The App handles no payments.
+  - generic [ref=e49]:
+    - heading "5. Sharing & Disclosure" [level=2] [ref=e50]
+    - paragraph [ref=e51]: "We share your personal data only as necessary, with:"
+    - list [ref=e52]:
+      - listitem [ref=e53]: Fixxly personnel with a legitimate operational need — warehouse management, inventory control, quality, finance, audit, and technical support;
+      - listitem [ref=e54]: Warehouse or fulfilment partners, and staffing agencies, where you are engaged through them, limited to what is necessary for supervision, performance management, payroll or billing verification, and investigation of discrepancies;
+      - listitem [ref=e55]: Google LLC / Firebase, which provides authentication, push notification delivery, crash reporting, and analytics infrastructure, as our processor;
+      - listitem [ref=e56]: Cloud hosting and infrastructure providers hosting our inventory and order systems;
+      - listitem [ref=e57]: Suppliers, limited to invoice and rejection photographs and associated goods-receipt details where necessary to resolve a supply or quality dispute — we do not disclose your name to a supplier unless necessary for the dispute;
+      - listitem [ref=e58]: Auditors, tax advisors, and legal counsel, where required for statutory compliance or legal advice;
+      - listitem [ref=e59]: Law enforcement, courts, or regulators, where required by law or valid legal process, or to establish, exercise, or defend a legal claim;
+      - listitem [ref=e60]: A successor entity, in a merger, acquisition, or restructuring.
+    - paragraph [ref=e61]: Some of these providers may process data on infrastructure located outside India. Where that occurs, we do so in accordance with the DPDPA and any restrictions notified by the Central Government.
+  - generic [ref=e62]:
+    - heading "6. Retention" [level=2] [ref=e63]
+    - paragraph [ref=e64]: Operational, inventory, and goods-receipt records — including your attribution to them — are retained as business and financial records for the period required under applicable tax, company, and audit law, and for as long as needed to establish, exercise, or defend a legal claim. These records cannot be deleted at your request, because they are financial and inventory records of the Company rather than data held solely about you.
+    - paragraph [ref=e65]: Account and authentication data is retained for the duration of your engagement and for a reasonable period afterwards for audit and security purposes. Your device notification token is deleted when you sign out. Crash and analytics data is retained on the retention schedule of the relevant Firebase service.
+  - generic [ref=e66]:
+    - heading "7. Security" [level=2] [ref=e67]
+    - paragraph [ref=e68]: We protect your data using encryption in transit, role-based access controls, individual credentials with one-time password verification, session expiry and token refresh, and audit logging of access. Access to activity records is limited to personnel with a legitimate need.
+  - generic [ref=e69]:
+    - heading "8. Your Rights" [level=2] [ref=e70]
+    - paragraph [ref=e71]: Under the DPDPA you have the right to obtain a summary of the personal data we process about you and the processing activities undertaken; to seek correction of inaccurate or incomplete personal data, and completion or updating where appropriate; to seek erasure, where we are not required to retain the data by law or for a legal claim; to nominate another person to exercise your rights in the event of your death or incapacity; and to a readily available grievance-redressal mechanism.
+    - paragraph [ref=e72]: Practical limits, stated honestly. You cannot require erasure of operational, inventory, or goods-receipt records attributed to you — these are the Company's financial and audit records and we are required to keep them. If you believe a record attributed to you is factually wrong, raise it as a correction request with your supervisor or our Grievance Officer; it will be investigated and, where substantiated, corrected with the correction itself logged.
+    - paragraph [ref=e73]: To exercise a right, contact our Grievance Officer (Section 10).
+  - generic [ref=e74]:
+    - heading "9. Notifications" [level=2] [ref=e75]
+    - paragraph [ref=e76]: The App sends operational notifications — task assignments, announcements, and alerts. On Android 13 and above, your device will ask for notification permission. You may decline or later revoke it in your device settings; if you do, you will not receive task alerts, which may affect your ability to perform your role. Notifications are configured to conceal their content on the lock screen.
+  - generic [ref=e77]:
+    - heading "10. Grievance Officer" [level=2] [ref=e78]
+    - list [ref=e79]:
+      - listitem [ref=e80]: "Name: Sarthak Patnaik"
+      - listitem [ref=e81]: "Designation: Grievance Officer / Data Protection Contact"
+      - listitem [ref=e82]: "Address: 4th Floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka – 560041"
+      - listitem [ref=e83]:
+        - text: "Email:"
+        - link "appsupport@fixxly.in" [ref=e84] [cursor=pointer]:
+          - /url: mailto:appsupport@fixxly.in
+      - listitem [ref=e85]: "Phone: +91-9740833777"
+      - listitem [ref=e86]: "Response timeline: Acknowledgement within 24 hours; resolution within 7 days."
+    - paragraph [ref=e87]: If unsatisfied with our resolution, you may complain to the Data Protection Board of India once it is fully operative. Nothing in this Notice limits any right or forum available to you under applicable labour legislation.
+  - generic [ref=e88]:
+    - heading "11. Account Deletion" [level=2] [ref=e89]
+    - paragraph [ref=e90]: If you wish to delete your Fixxly account and associated personal information, please contact our support team at care@fixxly.in.
+  - generic [ref=e91]:
+    - heading "12. Changes" [level=2] [ref=e92]
+    - paragraph [ref=e93]: We will update this Notice when our processing changes — in particular before introducing any new device permission, any location-based function, or any new category of monitoring. Material changes will be notified in-App or through your supervisor before taking effect.
+  - separator [ref=e94]
+  - generic [ref=e95]:
+    - heading "Contact" [level=2] [ref=e96]
+    - paragraph [ref=e97]: Fixxly Private Limited
+    - paragraph [ref=e98]: 4th Floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka, 560041
+    - paragraph [ref=e99]:
+      - text: "Email:"
+      - link "appsupport@fixxly.in" [ref=e100] [cursor=pointer]:
+        - /url: mailto:appsupport@fixxly.in
+    - paragraph [ref=e101]:
+      - text: "Website:"
+      - link "https://www.fixxly.in" [ref=e102] [cursor=pointer]:
+        - /url: https://www.fixxly.in

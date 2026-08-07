@@ -1,7 +1,7 @@
 // Block types: h (section heading), sub (sub-heading), p (paragraph),
 // ul (bullet list), ol (numbered list), contact (name + email link).
 export const intro = [
-  { p: 'Last Updated: 1 August 2026' },
+  { p: 'Last Updated: 06-08-2026' },
 ]
 
 export const sections = [
@@ -15,7 +15,7 @@ export const sections = [
         p: 'This Policy is an electronic record under the Information Technology Act, 2000 ("IT Act") and does not require any physical or digital signature. It should be read together with our Terms of Use. Capitalised terms not defined here have the meaning given in the Terms of Use.',
       },
       {
-        p: 'This Policy describes the App in its current form, which allows you to sign in, browse products, and save optional profile and site details.',
+        p: 'This Policy describes the App in its current form, which allows you to browse and search products, save optional profile, business and site details.',
       },
       {
         p: 'By using the App or providing your information to us, you consent to the collection, use, storage, and disclosure of your personal information as described in this Policy. Where we rely on your consent for a specific processing activity (for example, sending promotional communications), we will seek that consent separately and specifically, in line with DPDPA requirements for clear, informed, and purpose-specific consent.',
@@ -30,15 +30,17 @@ export const sections = [
       },
       {
         ul: [
-          'Account information. Your mobile number, which we collect when you sign in using an OTP. Where you choose to provide them, we also collect your name, email address, profile photo, and trade or business name, and your GST registration number where you use GST-related features.',
-          'Device and technical information. When the App communicates with our servers, we automatically receive limited technical information such as your device model, operating system version, App version, and IP address, which we use to operate and secure the App.',
+          'Account information. Your mobile number, which we collect when you sign in using an OTP. Where you choose to provide them, we also collect your name, trade or business name, and your GST registration number where you use GST-related features.',
+          'Trade information. The trade or trades you select, which we use to prioritise the categories and products shown to you.',
+          'Device and technical information. When the App communicates with our servers, we automatically receive limited technical information such as your device model, operating system version, App version, network connection state, and IP address, which we use to operate and secure the App.',
+          'Preferences and in-app settings.',
         ],
       },
       {
-        p: "What we do not collect in this version. The App does not access your device's precise GPS location, camera, or microphone, and it does not request or process any payment information (such as card, UPI, or bank details), because the App does not currently support ordering or payments. The App does not use third-party advertising or analytics tracking.",
+        p: "What we do not collect. The App does not access your device's precise GPS location, camera, or microphone. Where you set up a site, you type the address or select it from an address search, and any coordinates we store are those associated with the address you chose, not a reading taken from your device. The App does not access your contacts, call logs, SMS messages, or calendar. The App does not collect or store your card, UPI, or bank details; where online payment is offered, those details are entered with and handled by the payment provider and are not received or retained by us. The App does not use third-party advertising or analytics tracking, and does not collect an advertising identifier.",
       },
       {
-        p: 'If you choose not to provide optional information, you can still browse the App, though some optional features may not be available.',
+        p: 'If you choose not to provide optional information, you can still browse the App, though some personalised features may not be available.',
       },
     ],
   },
@@ -49,15 +51,14 @@ export const sections = [
       {
         ul: [
           'Account and sign-in. Verifying your mobile number via OTP and maintaining your signed-in session.',
-          'Providing the App. Showing you relevant categories and products, and saving your profile.',
-          'Support. Responding to your queries and requests.',
+          'Providing the App. Showing you relevant categories and products, prioritising them by your selected trade, and saving your profile and sites.',
           'Security and fraud prevention. Detecting and preventing unauthorised access, misuse, and policy violations.',
-          'Legal compliance. Responding to lawful requests from courts, regulators, or law enforcement, and meeting our legal obligations.',
+          'Legal and tax compliance. As required under applicable tax and company law, responding to lawful requests from courts, regulators, or law enforcement, and meeting our legal obligations.',
           'Marketing (opt-in only). Sending you offers and updates, only where you have consented, and which you can opt out of at any time.',
         ],
       },
       {
-        p: "We will not use your personal information for a purpose materially different from those stated above without seeking your fresh consent, in line with the DPDPA's purpose-limitation principle.",
+        p: 'We will not use your personal information for a purpose materially different from those stated above without seeking your fresh consent, in line with the DPDPA purpose-limitation principle.',
       },
     ],
   },
@@ -74,7 +75,7 @@ export const sections = [
         ],
       },
       {
-        p: 'What we do not do. In this version of the App, we do not share your personal information with sellers, logistics or delivery partners, payment gateways, or advertising or analytics networks. We do not sell your personal information to any third party.',
+        p: 'What we do not do. We do not share your personal information with advertising or analytics networks, and we do not sell your personal information to any third party.',
       },
     ],
   },
@@ -85,13 +86,16 @@ export const sections = [
         p: '5.1 We retain your personal information only for as long as reasonably necessary to fulfil the purposes described in this Policy, or as required to comply with applicable law, whichever is longer.',
       },
       {
-        p: '5.2 Right to erasure. In line with the DPDPA, you may request deletion of your personal information at any time by writing to our Grievance Officer (Section 9) or through the "Delete my account" option in the App, where available. We will act on your request unless we are required to retain certain data (a) to comply with a legal or regulatory obligation, or (b) for the establishment, exercise, or defence of a legal claim.',
+        p: '5.2 Right to erasure. In line with the DPDPA, you may request deletion of your personal information at any time by writing to our Grievance Officer (Section 9), through the "Delete my account" option in the App. We will act on your request unless we are required to retain certain data (a) to comply with a legal or regulatory obligation, or (b) for the establishment, exercise, or defence of a legal claim.',
       },
       {
         p: '5.3 Upon account deletion, we will remove or anonymise your personal information within the timelines prescribed under applicable law, except for the retained categories described above.',
       },
       {
-        p: '5.4 Account deletion requests. To request deletion of your Fixxly account, please contact us at care@fixxly.in. We will process your request in accordance with this Section 5.',
+        p: '5.4 We may delay a deletion request if there is an active legal dispute or investigation regarding your account. Post-resolution, we will process your request.',
+      },
+      {
+        p: '5.5 Account deletion requests. To request deletion of your Fixxly account, please contact us at appsupport@fixxly.in. We will process your request in accordance with this Section 5.',
       },
     ],
   },
@@ -113,7 +117,7 @@ export const sections = [
         p: '7.1 Your rights. Subject to applicable law, you may request access to, correction of, or erasure of your personal information, and you may withdraw any consent you have given. Withdrawal is configured to be as easy as giving consent.',
       },
       {
-        p: '7.2 Direct controls. You can opt out of promotional messages via the option provided in the communication or in the App, or by writing to us.',
+        p: '7.2 Direct controls. You can update your name, business name, GST details, trades in the App at any time. You can opt out of promotional messages by writing to us.',
       },
       {
         p: '7.3 Consent Managers under DPDPA. In accordance with the DPDPA, you have the right to give, manage, review, or withdraw your consent through an independently registered Consent Manager as such platforms become operational under the Data Protection Board of India. Until then, you can manage your permissions in the App or by contacting our Grievance Officer.',

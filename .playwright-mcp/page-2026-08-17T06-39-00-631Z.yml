@@ -1,0 +1,146 @@
+- main [ref=e3]:
+  - heading "Privacy Policy" [level=1] [ref=e5]
+  - paragraph [ref=e6]: "Last Updated: 17-08-2026"
+  - generic [ref=e7]:
+    - heading "1. Introduction & Consent" [level=2] [ref=e8]
+    - paragraph [ref=e9]: Fixxly Private Limited ("Company", "Fixxly", "we", "us", "our") is committed to protecting the privacy of individuals who access or use our mobile application and website (together, the "Platform"). The term "you" or "your" refer to the users of this Platform. This Privacy Policy ("Policy") explains what personal information we collect, why we collect it, how we use and protect it, and the rights available to you as a "Data Principal" under the Digital Personal Data Protection Act, 2023 ("DPDPA").
+    - paragraph [ref=e10]: Separately, Velobrix Retail Private Limited ("Velobrix"), an independent Indian company registered under GSTIN 29AAMCV4271F1ZY, having its registered office at Bay 4, 4th Floor, Nos. 45/1 and 45/2, Mantri Junction, 45th Cross, JP Nagar Phase 2, Bengaluru, Bengaluru Urban, Karnataka 560078, is the seller of record for products purchased through the Platform and receives certain personal information from us in that capacity, as described in Section 4 below. This Policy governs Fixxly's collection and processing of your personal information as the Platform operator; Velobrix's own handling of information it receives is subject to Velobrix's obligations under applicable law.
+    - paragraph [ref=e11]: This Policy is an electronic record under the Information Technology Act, 2000 ("IT Act") and does not require any physical or digital signature. It should be read together with our Terms of Use. Capitalized terms not defined here have the meaning given in the Terms of Use.
+    - paragraph [ref=e12]: By accessing or using the Platform, registering an account, or providing your information to us, you consent to the collection, transfer, use, storage, sharing, and disclosure of your personal information as described in this Policy. If you do not agree with this Policy, please do not use or access the Platform. Where we rely on your consent for a specific processing activity (e.g., sending promotional communications, background location tracking), we will seek that consent separately and specifically, in line with DPDPA requirements for clear, informed, and purpose-specific consent.
+    - paragraph [ref=e13]: If you are providing personal information about another individual (e.g., a colleague, or a recipient at your delivery site), you confirm that you have their permission to share such information with us for the purposes described in this Policy.
+  - generic [ref=e14]:
+    - heading "2. Information We Collect" [level=2] [ref=e15]
+    - paragraph [ref=e16]: "We collect only as much personal information as is reasonably necessary for the purposes described in this Policy (\"data minimization\"). This may include:"
+    - list [ref=e17]:
+      - listitem [ref=e18]: "Personal Information: Name, mobile number, email address, business/trade name, and profile photo (optional); government-issued identification or KYC details, where required for onboarding or fraud checks; GST registration number, where you access GST-linked features or prompts."
+      - listitem [ref=e19]: "Transactional Data: Order history, product preferences, delivery addresses, payment method (we do not store full card numbers — these are processed by our PCI-DSS compliant payment partners), invoices, and communications with customer support."
+      - listitem [ref=e20]: "Precise & Background Location Data: With your permission, we collect precise GPS location to determine Velobrix-to-site delivery routing, show real-time order tracking, and estimate delivery time. Where you enable background location access, we may continue to receive location updates while the app is not in active use, solely to improve dispatch accuracy and delivery estimated time of arrival (\"ETA\") for an active order. Background tracking is not used outside the context of an active or recent order, and you can disable it at any time from your device settings (see Section 7)."
+      - listitem [ref=e21]: "Device & Usage Data: Device model, operating system, IP address, browser type, app version, crash logs, and general usage patterns (pages/screens viewed, session duration)."
+      - listitem [ref=e22]: "Cookies & Similar Technologies: On our website, we use cookies and similar tracking technologies as described in Section 8."
+    - paragraph [ref=e23]: If you choose not to provide certain information (e.g., precise location or KYC details), we may not be able to complete your registration or fulfil certain orders.
+  - generic [ref=e24]:
+    - heading "3. Purpose of Collection (Use of Data)" [level=2] [ref=e25]
+    - paragraph [ref=e26]: "We use the information collected for the following purposes:"
+    - table [ref=e28]:
+      - rowgroup [ref=e29]:
+        - row [ref=e30]:
+          - columnheader "Purpose" [ref=e31]
+          - columnheader "Examples" [ref=e32]
+      - rowgroup [ref=e33]:
+        - row [ref=e34]:
+          - cell "Identity & Account Verification" [ref=e35]
+          - cell "Confirming your mobile number via OTP, verifying KYC/business details through GST database verification loops." [ref=e36]
+        - row [ref=e37]:
+          - cell "Service Fulfilment" [ref=e38]
+          - cell "Processing orders, routing coordinates to Velobrix, real-time tracking, delivery confirmation." [ref=e39]
+        - row [ref=e40]:
+          - cell "Communication & Notifications" [ref=e41]
+          - cell "Order updates, delivery ETAs, service alerts, responses to support queries." [ref=e42]
+        - row [ref=e43]:
+          - cell "Payments & Invoicing" [ref=e44]
+          - cell "Processing payments, generating GST-compliant business or consumer retail invoices, tax compliance." [ref=e45]
+        - row [ref=e46]:
+          - cell "Fraud Prevention & Security" [ref=e47]
+          - cell "Detecting suspicious activity, preventing unauthorized account access, investigating policy violations." [ref=e48]
+        - row [ref=e49]:
+          - cell "Platform Improvement" [ref=e50]
+          - cell "Analytics, diagnosing technical issues, improving dispatch efficiency." [ref=e51]
+        - row [ref=e52]:
+          - cell "Marketing (opt-in only)" [ref=e53]
+          - cell "Sending offers, new-category launches, and promotions — only where you have consented." [ref=e54]
+        - row [ref=e55]:
+          - cell "Legal Compliance" [ref=e56]
+          - cell "Responding to lawful requests from courts, regulators, or law enforcement." [ref=e57]
+    - paragraph [ref=e58]: We will not use your personal information for a purpose materially different from those stated above without seeking your fresh consent, in line with the DPDPA purpose-limitation principle.
+  - generic [ref=e59]:
+    - heading "4. Disclosure & Sharing" [level=2] [ref=e60]
+    - paragraph [ref=e61]: "We may share your information, only to the extent necessary, with:"
+    - list [ref=e62]:
+      - listitem [ref=e63]: Group companies & affiliates, for internal administration and service improvement, subject to this Policy;
+      - listitem [ref=e64]: Velobrix and Logistics Partners, limited to the details necessary to fulfil your order (name, contact number, curbside or site delivery address, order details), as Velobrix is the seller of record for your purchase;
+      - listitem [ref=e65]: Our payment aggregator (a Reserve Bank of India authorised entity engaged by Velobrix from time to time), to process payments and refunds securely to and from Velobrix, the beneficiary of such payments;
+      - listitem [ref=e66]: Third-party service providers, such as cloud hosting, validation vendors (GSTIN API validation loops), analytics, SMS/WhatsApp/notification providers, and customer support tools, who are contractually bound to use your information only for the purpose we specify and to maintain confidentiality;
+      - listitem [ref=e67]: Law enforcement or government authorities, where required by law, a valid legal process, or to protect the rights, safety, or property of Fixxly, our Users, or the public;
+      - listitem [ref=e68]: Professional advisors (auditors, legal counsel) as needed for legitimate business purposes;
+      - listitem [ref=e69]: A successor entity, in the event of a merger, acquisition, or restructuring, subject to that entity honouring this Policy.
+    - paragraph [ref=e70]: We do not sell your personal information to third parties for their independent marketing use. Your personal information may be stored, processed, or accessed from servers located outside India. In accordance with Section 16 of the DPDPA, we may transfer personal information outside India, except to countries or territories restricted by the Central Government by notification.
+  - generic [ref=e71]:
+    - heading "5. Data Retention & Deletion" [level=2] [ref=e72]
+    - paragraph [ref=e73]: We retain your personal information only for as long as reasonably necessary to fulfil the purposes described in this Policy, or as required to comply with applicable law (including tax and accounting record-keeping requirements), whichever is longer.
+    - paragraph [ref=e74]: "Right to Erasure: In line with the DPDPA, you may request deletion of your personal information at any time by writing to our Grievance Officer (Section 10) or through the \"Delete my account\" option in the app, where available. We will act on your request unless we are required to retain certain data:"
+    - list [ref=e75]:
+      - listitem [ref=e76]: to complete a transaction already in progress;
+      - listitem [ref=e77]: to comply with a legal or regulatory obligation (e.g., invoicing/tax records);
+      - listitem [ref=e78]: for the establishment, exercise, or defence of a legal claim.
+    - paragraph [ref=e79]: Upon account deletion, we will remove or anonymize your personal information within the timelines prescribed under applicable law, except for the retained categories described above.
+  - generic [ref=e80]:
+    - heading "6. Information Security" [level=2] [ref=e81]
+    - paragraph [ref=e82]: We implement reasonable managerial, technical, operational, and electronic security safeguards appropriate to the sensitivity of the information we hold, including encryption in transit, access controls, and regular security reviews, in line with the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011.
+    - paragraph [ref=e83]: No method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee its absolute security. In the unlikely event of a data breach that affects you, we will notify you and the relevant authorities as required under applicable law.
+  - generic [ref=e84]:
+    - heading "7. Right to Withdraw Consent & Statutory Data Rights" [level=2] [ref=e85]
+    - paragraph [ref=e86]: You may withdraw your consent to any processing activity that relies on consent (such as background location tracking or marketing communications) at any time. Withdrawal is configured to be as easy as giving consent.
+    - list [ref=e87]:
+      - listitem [ref=e88]: "Direct Controls: You can disable location/notification permissions from your device settings, or opt out of promotional messages via the link/option provided in the communication, or by writing to us."
+      - listitem [ref=e89]: "General Withdrawal: You can request withdrawal of consent generally by contacting our Grievance Officer (Section 10) on a standard Business Day. Please note that withdrawing consent for certain data (e.g., precise location) may limit or disable core features such as live order tracking or delivery dispatch. Withdrawal will not affect the lawfulness of processing carried out before such withdrawal, and we may continue to retain and use information as permitted under Section 5 (Data Retention) or as required by law."
+      - listitem [ref=e90]: "Consent Managers under DPDPA: In accordance with the DPDPA, you have the statutory right to give, manage, review, or completely withdraw your consent through an independently registered \"Consent Manager\". Fixxly is deploying the technical framework and APIs needed to integrate with authorized Consent Manager platforms as they become operationalized by the Data Protection Board of India (DPBI). Until Consent Manager platforms are broadly available, you can manage your active data permissions via your Fixxly Account Privacy Dashboard or by issuing a direct request to our Grievance Officer."
+      - listitem [ref=e91]: "Right to Access: In accordance with Section 11 of the DPDPA, you have the right to obtain from us, on request to our Grievance Officer, a summary of the personal information we are processing about you and of the processing activities undertaken in respect of such information;"
+      - listitem [ref=e92]: "Right to Nominate: You have the right to nominate, in a prescribed manner, any other individual to exercise your data principal rights (including the right to access, correct, complete, or erase your digital personal data) on your behalf, in the event of your death or incapacity."
+    - paragraph [ref=e93]: You may register, modify, or update your nominee details via the "Nomination and Authorization" form available within your profile settings or by contacting the Grievance Officer.
+  - generic [ref=e94]:
+    - heading "8. Cookies & Tracking Policy" [level=2] [ref=e95]
+    - paragraph [ref=e96]: "Our website uses cookies, web beacons, and similar analytical tools to:"
+    - list [ref=e97]:
+      - listitem [ref=e98]: Remember your preferences and login state;
+      - listitem [ref=e99]: Understand usage patterns and improve site performance;
+      - listitem [ref=e100]: Measure the effectiveness of promotional campaigns.
+    - paragraph [ref=e101]: You can control or disable cookies through your browser settings. Disabling cookies may affect certain website functionality. We do not use cookies to collect sensitive personal data without your consent.
+  - generic [ref=e102]:
+    - heading "9. Minors Policy" [level=2] [ref=e103]
+    - paragraph [ref=e104]: The Platform is intended solely for use by individuals who are 18 years of age or older. We do not knowingly collect personal information from children. If we become aware that we have inadvertently collected personal information from a minor, we will delete such information and, where applicable, deactivate the associated account promptly. If you believe a minor has provided us with personal information, please contact our Grievance Officer immediately.
+  - generic [ref=e105]:
+    - heading "10. Grievance Officer" [level=2] [ref=e106]
+    - paragraph [ref=e107]: "In accordance with the IT Act, 2000, the Intermediary Guidelines, 2021, and the DPDPA, 2023, you may direct any questions, complaints, or requests concerning your personal information (including requests to access, correct, or erase your data, or to withdraw consent) to our Grievance Officer:"
+    - table [ref=e109]:
+      - rowgroup [ref=e110]:
+        - row [ref=e111]:
+          - columnheader "Particular" [ref=e112]
+          - columnheader "Detail" [ref=e113]
+      - rowgroup [ref=e114]:
+        - row [ref=e115]:
+          - cell "Name" [ref=e116]
+          - cell "Sarthak Patnaik" [ref=e117]
+        - row [ref=e118]:
+          - cell "Designation" [ref=e119]
+          - cell "Grievance Officer / Data Protection Contact" [ref=e120]
+        - row [ref=e121]:
+          - cell "Address" [ref=e122]
+          - cell "4th floor, Central Mall. 2nd Phase, JP Nagar, Bengaluru, Karnataka - 560041" [ref=e123]
+        - row [ref=e124]:
+          - cell "Email" [ref=e125]
+          - cell [ref=e126]:
+            - link "appsupport@fixxly.in" [ref=e127] [cursor=pointer]:
+              - /url: mailto:appsupport@fixxly.in
+        - row [ref=e128]:
+          - cell "Phone" [ref=e129]
+          - cell "+91-9740833777" [ref=e130]
+        - row [ref=e131]:
+          - cell "Response Timeline" [ref=e132]
+          - cell "We will acknowledge your request within 24 hours and resolve it within 7 days on Business Days." [ref=e133]
+    - paragraph [ref=e134]: If you are not satisfied with our resolution, you may also have the right to file a complaint with the Data Protection Board of India, once fully operative under the DPDPA.
+  - generic [ref=e135]:
+    - heading "11. Changes to This Policy" [level=2] [ref=e136]
+    - paragraph [ref=e137]: We may update this Policy from time to time to reflect changes in our practices or applicable law. The updated Policy will be posted on the Platform with a revised "Last Updated" date, and your continued use of the Platform after such changes constitutes your consent and acceptance of the updated Policy. For material changes affecting how we use your personal information, we will make reasonable efforts to notify you directly (e.g., via in-app notice or email) before the change takes effect.
+  - separator [ref=e138]
+  - generic [ref=e139]:
+    - heading "Contact" [level=2] [ref=e140]
+    - paragraph [ref=e141]: Fixxly Private Limited
+    - paragraph [ref=e142]: 4th Floor, Central Mall, 2nd Phase, JP Nagar, Bengaluru, Karnataka, 560041
+    - paragraph [ref=e143]:
+      - text: "Email:"
+      - link "appsupport@fixxly.in" [ref=e144] [cursor=pointer]:
+        - /url: mailto:appsupport@fixxly.in
+    - paragraph [ref=e145]:
+      - text: "Website:"
+      - link "https://www.fixxly.in" [ref=e146] [cursor=pointer]:
+        - /url: https://www.fixxly.in

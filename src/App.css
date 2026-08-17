@@ -53,6 +53,36 @@
   margin-bottom: 6px;
 }
 
+.policy .table-wrap {
+  overflow-x: auto;
+  margin: 0 0 18px;
+}
+
+.policy table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.policy th,
+.policy td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+}
+
+.policy th {
+  font-weight: 600;
+  color: var(--heading);
+}
+
+.policy tbody td:first-child {
+  font-weight: 500;
+  color: var(--heading);
+}
+
 .policy a {
   color: var(--accent);
   text-decoration: none;

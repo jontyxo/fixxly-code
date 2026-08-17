@@ -34,6 +34,29 @@ function Block({ block }) {
         ))}
       </ul>
     )
+  if (block.table)
+    return (
+      <div className="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              {block.table.head.map((cell, i) => (
+                <th key={i}>{cell}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {block.table.rows.map((row, i) => (
+              <tr key={i}>
+                {row.map((cell, j) => (
+                  <td key={j}>{linkify(cell)}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )
   return null
 }
 
